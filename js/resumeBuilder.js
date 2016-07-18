@@ -7,8 +7,6 @@ This is empty on purpose! Your code to build the resume will go here.
 var bio = {
  	"name": "Karla N. Aguilar",
  	"role": "Web Developer",
- 	"welcomeMessage": "Hello and Welcome!",
- 	"biopic": "images/fry.jpg",
  	"contacts": {
  		"mobile": "777-777-3333",
  		"email": "kn.aguilar7@gmail.com",
@@ -21,7 +19,7 @@ var bio = {
  		"Awesome", "Bilingual", "Code Ninja", "HTML", "CSS", "JavaScript", "Bootstrap", "Photographer"
  		],
  	"biopic": "images/profile_1.jpg"
- }
+};
 
 //work object
 
@@ -50,7 +48,7 @@ var work = {
 		"description": "QA Testing for CalPath projects through the use of Selenium, JUnit and Jenkins automated tools. Little supervision for software set-up, testing and installation."
 	}
 	]
-}
+};
 
 //education object
 
@@ -87,7 +85,7 @@ var education = {
 		"url": "https://www.adobe.com/"
 	}
 	]
-}
+};
 
 //projects object
 var projects = {
@@ -111,7 +109,7 @@ var projects = {
 		"images": ["http://placekitten.com/200/300", "http://placekitten.com/200/300"]
 	}
 	]
-}
+};
 
 
 bio.display = function() {
@@ -151,7 +149,7 @@ bio.display = function() {
 			$("#skills").append(formattedSkills);
 		}
 	}
-}
+};
 
 bio.display();
 
@@ -169,7 +167,7 @@ work.display = function() {
 			$(".work-entry:last").append(formattedDates);
 			$(".work-entry:last").append(formattedDescription);
 	}
-}
+};
 
 work.display();
 
@@ -202,7 +200,7 @@ projects.display = function() {
 			}
 		}
 	}
-}
+};
 
 projects.display();
 
@@ -225,7 +223,7 @@ education.display = function() {
 			var combinedMajors = "";
 			for(var maj = 0; maj < education.schools[edu].majors.length; maj++){
 				var formattedMajors = HTMLschoolMajor.replace("%data%", education.schools[edu].majors[maj]);
-				combinedMajors += formattedMajors + " "
+				combinedMajors += formattedMajors + " ";
 			}
 			$(".education-entry:last").append(combinedMajors); // Combined Majors in a list rather than have Majors: " " repeat each
 		}
@@ -240,14 +238,14 @@ education.display = function() {
 			var formattedTitleSchool = formattedTitle + " " + formattedSchool;
 			$(".education-entry:last").append(formattedTitleSchool);
 
-			var formattedDates = HTMLonlineDates.replace("%data%", education.onlineClasses[courses].dates);
-			$(".education-entry:last").append(formattedDates);
+			var formattedYear = HTMLonlineDates.replace("%data%", education.onlineClasses[courses].dates);
+			$(".education-entry:last").append(formattedYear);
 
 			var formattedURL = HTMLonlineURL.replace("%data%", education.onlineClasses[courses].url);
 			$(".education-entry:last").append(formattedURL);
 		}
 	}
-}
+};
 
 education.display();
 
