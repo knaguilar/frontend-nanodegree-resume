@@ -252,3 +252,32 @@ education.display();
 
 //add a map
 $("#mapDiv").append(googleMap);
+
+bio.displayFooter = function() {
+	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+	var phone = "<span class='zocial-call'>";
+	var formattedMobileFont = phone + formattedMobile;
+	$("#footerContacts").append(formattedMobileFont);
+
+	var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+	var email = "<span class='zocial-gmail'>";
+	var formattedEmailFont = email + formattedEmail;
+	$("#footerContacts").append(formattedEmailFont);
+
+	var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.github);
+	var github = "<span class='zocial-github'>";
+	var formattedGitHubFont = github + formattedGitHub;
+	$("#footerContacts").append(formattedGitHubFont);
+
+	var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+	var twitter = "<span class='zocial-twitter'>";
+	var formattedTwitterFont = twitter + formattedTwitter;
+	$("#footerContacts").append(formattedTwitterFont);
+
+	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+	var location = "<span class='zocial-pinboard'>";
+	var formattedLocationFont = location + formattedLocation;
+	$("#footerContacts").append(formattedLocationFont);
+};
+
+bio.displayFooter();
