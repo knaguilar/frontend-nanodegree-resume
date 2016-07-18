@@ -155,6 +155,7 @@ bio.display();
 
 //Add work experience
 work.display = function() {
+	$("#workExperience").append("<hr>");
 	for (var job = 0; job < work.jobs.length; job++){
 			$("#workExperience").append(HTMLworkStart);
 
@@ -181,6 +182,7 @@ function locationizer(work_obj) {
 }
 
 projects.display = function() {
+	$("#projects").append("<hr>");
 	for(var proj = 0; proj < projects.projects.length; proj++) {
 		$("#projects").append(HTMLprojectStart);
 
@@ -205,6 +207,7 @@ projects.display = function() {
 projects.display();
 
 education.display = function() {
+	$("#education").append("<hr>");
 	for(var edu = 0; edu < education.schools.length; edu++) {
 		$("#education").append(HTMLschoolStart);
 

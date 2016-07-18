@@ -1,3 +1,27 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial for footer icons*/
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+body {
+  background: turquoise; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(40,178,133,0.9), rgba(74,70,200,0.7)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(40,178,133,0.9), rgba(74,70,200,0.7)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(40,178,133,0.9), rgba(74,70,200,0.7)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(40,178,133,0.9), rgba(74,70,200,0.7)); /*Standard*/
+}
+
+/*Make the div stand out as a box*/
+#lets-connect {
+  background: turquoise; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(40,178,133,0.8), rgba(74,70,200,0.4)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(40,178,133,0.8), rgba(74,70,200,0.4)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(40,178,133,0.8), rgba(74,70,200,0.4)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(40,178,133,0.8), rgba(74,70,200,0.4)); /*Standard*/
+}
+
 body,
 div,
 ul,
@@ -11,7 +35,8 @@ h5,
 h6 {
   padding:0;
   margin:0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Dosis","Roboto", sans-serif;
+  color: #fff;
 }
 
 .clear-fix {
@@ -24,9 +49,14 @@ h6 {
   padding: 0 5%;
 }
 
+hr, #header-hr {
+  width: 90%;
+  text-align: center;
+}
+
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  /*color: #f5a623;*/
   line-height: 48px;
   display: inline;
 }
@@ -34,7 +64,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999;
+  /*color: #999;*/
   line-height: 29px;
   padding: 10px;
 }
@@ -42,14 +72,14 @@ h2 {
 h3 {
   font-style: italic;
   font-size: 20px;
-  color: #000;
+  /*color: #000;*/
   line-height: 22px;
 }
 
 h4 {
   font-weight: bold;
   font-size: 14px;
-  color: #4a4a4a;
+  /*color: #4a4a4a;*/
   line-height: 17px;
 }
 
@@ -69,7 +99,7 @@ h3 {
 .date-text {
   font-style: italic;
   font-size: 14px;
-  color: #999;
+  /*color: #999;*/
   line-height: 16px;
   float: left;
 }
@@ -77,7 +107,7 @@ h3 {
 .location-text {
   font-style: italic;
   font-size: 14px;
-  color: #999;
+  /*color: #999;*/
   line-height: 16px;
   float: right;
 
@@ -85,12 +115,12 @@ h3 {
 
 p {
   font-size: 14px;
-  color: #333;
+  /*color: #333;*/
   line-height: 21px;
 }
 
 a {
-  color: #1199c3;
+  color: #fed31a;
   text-decoration: none;
   margin-top: 10px;
   display: block;
@@ -99,21 +129,18 @@ a {
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #f3f3f3;
+  /*color: #f3f3f3;*/
   line-height: 28px;
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: #fed31a;
   display: none;
 }
 
-.orange {
-  background-color: #f5ae23;
-}
 
-.orange-text {
-  color: #f5ae23;
+.gold-text {
+  color: #fed31a;
 }
 
 .white-text {
@@ -121,8 +148,8 @@ a {
   color: #fff;
 }
 
-.gray {
-  background-color: #f3f3f3;
+/*Gradient background color instead of grey: green to purple*/
+.section-space {
   padding-bottom: 10px;
   clear:both;
 }
@@ -131,10 +158,10 @@ a {
   background-color: #4a4a4a;
 }
 
-/* TODO: Replace with image later */
-#header {
-  background-color: #484848;
-}
+/* TODO: Replace with image later
+#header{}
+*/
+
 
 .flex-box {
   display: -webkit-flex;
