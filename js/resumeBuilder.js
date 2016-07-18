@@ -6,7 +6,7 @@ This is empty on purpose! Your code to build the resume will go here.
 
 var bio = {
  	"name": "Karla N. Aguilar",
- 	"role": "Web Developer",
+ 	"role": "Front-End Web Developer",
  	"contacts": {
  		"mobile": "777-777-3333",
  		"email": "kn.aguilar7@gmail.com",
@@ -79,10 +79,10 @@ var education = {
 		"url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
 	},
 	{
-		"title": "Training for Trainer",
+		"title": "Adobe Education Train the Trainer",
 		"school": "Adobe Education Exchange",
 		"dates": 2016,
-		"url": "https://www.adobe.com/"
+		"url": "https://edex.adobe.com/pd/course/t4t-spring-2016/"
 	}
 	]
 };
@@ -121,8 +121,6 @@ bio.display = function() {
 
 	var formattedName = HTMLheaderName.replace("%data%", bio.name);
 	$("#header").prepend(formattedName);
-
-	// $("#topContacts").append(HTMLcontactGeneric);
 
 	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 	$("#topContacts").append(formattedMobile);
@@ -211,7 +209,7 @@ education.display = function() {
 	for(var edu = 0; edu < education.schools.length; edu++) {
 		$("#education").append(HTMLschoolStart);
 
-		var formattedName = HTMLschoolName.replace("%data%", education.schools[edu].name);
+		var formattedName = HTMLschoolName.replace("%data%", education.schools[edu].name).replace("#", education.schools[edu].url);
 		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[edu].degree);
 		var formattedNameDegree = formattedName + " " + formattedDegree;
 		$(".education-entry:last").prepend(formattedNameDegree);
@@ -244,7 +242,7 @@ education.display = function() {
 			var formattedYear = HTMLonlineDates.replace("%data%", education.onlineClasses[courses].dates);
 			$(".education-entry:last").append(formattedYear);
 
-			var formattedURL = HTMLonlineURL.replace("%data%", education.onlineClasses[courses].url);
+			var formattedURL = HTMLonlineURL.replace("%data%", "More information").replace("#", education.onlineClasses[courses].url);
 			$(".education-entry:last").append(formattedURL);
 		}
 	}

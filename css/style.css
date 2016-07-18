@@ -129,13 +129,16 @@ a {
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  /*color: #f3f3f3;*/
   line-height: 28px;
+  display: block;
+  text-align: center;
+
 }
 
 #skills-h3 {
   color: #fed31a;
   display: none;
+  padding-top: 30px;
 }
 
 
@@ -154,14 +157,19 @@ a {
   clear:both;
 }
 
-.dark-gray {
-  background-color: #4a4a4a;
-}
-
 /* TODO: Replace with image later
 #header{}
 */
+#skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+}
 
+.skill-item {
+  width: 50%;
+}
 
 .flex-box {
   display: -webkit-flex;
