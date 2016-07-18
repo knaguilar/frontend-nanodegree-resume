@@ -54,11 +54,15 @@ h4 {
 }
 
 h2,
-h3,
+#skills-h3,
 h4,
 h5 {
   padding:10px 5%;
 
+}
+
+h3 {
+  padding-top: 10px;
 }
 
 
