@@ -2,28 +2,39 @@
 
 /* zocial for footer icons*/
 [class*="zocial-"]:before {
-  font-family: 'zocial', sans-serif;
+    font-family: 'zocial', sans-serif;
 }
 
 /** {
   outline: 1px solid red !important;
 }*/
 
+/*Gradient background color instead of grey: green to purple*/
 body {
-  background: turquoise; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left,rgba(40,178,133,0.9), rgba(74,70,200,0.7)); /*Safari 5.1-6*/
-  background: -o-linear-gradient(right,rgba(40,178,133,0.9), rgba(74,70,200,0.7)); /*Opera 11.1-12*/
-  background: -moz-linear-gradient(right,rgba(40,178,133,0.9), rgba(74,70,200,0.7)); /*Fx 3.6-15*/
-  background: linear-gradient(to right, rgba(40,178,133,0.9), rgba(74,70,200,0.7)); /*Standard*/
+    background: turquoise;
+ /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left,rgba(40,178,133,0.9), rgba(74,70,200,0.7));
+ /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,rgba(40,178,133,0.9), rgba(74,70,200,0.7));
+ /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,rgba(40,178,133,0.9), rgba(74,70,200,0.7));
+ /*Fx 3.6-15*/
+    background: linear-gradient(to right, rgba(40,178,133,0.9), rgba(74,70,200,0.7));
+ /*Standard*/;
 }
 
 /*Make the div stand out as a box*/
 #lets-connect {
-  background: turquoise; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left,rgba(40,178,133,0.8), rgba(74,70,200,0.4)); /*Safari 5.1-6*/
-  background: -o-linear-gradient(right,rgba(40,178,133,0.8), rgba(74,70,200,0.4)); /*Opera 11.1-12*/
-  background: -moz-linear-gradient(right,rgba(40,178,133,0.8), rgba(74,70,200,0.4)); /*Fx 3.6-15*/
-  background: linear-gradient(to right, rgba(40,178,133,0.8), rgba(74,70,200,0.4)); /*Standard*/
+    background: turquoise;
+ /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left,rgba(40,178,133,0.8), rgba(74,70,200,0.4));
+ /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,rgba(40,178,133,0.8), rgba(74,70,200,0.4));
+ /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,rgba(40,178,133,0.8), rgba(74,70,200,0.4));
+ /*Fx 3.6-15*/
+    background: linear-gradient(to right, rgba(40,178,133,0.8), rgba(74,70,200,0.4));
+ /*Standard*/;
 }
 
 body,
@@ -37,238 +48,235 @@ h3,
 h4,
 h5,
 h6 {
-  padding:0;
-  margin:0;
-  font-family: "Dosis","Roboto", sans-serif;
-  color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: "Dosis","Roboto", sans-serif;
+    color: #fff;
 }
 
 .clear-fix {
-  overflow: auto;
+    overflow: auto;
 }
 
 .education-entry,
 .work-entry,
 .project-entry {
-  padding: 0 5%;
+    padding: 0 5%;
 }
 
 hr, #header-hr {
-  width: 90%;
-  text-align: center;
+    width: 90%;
+    text-align: center;
 }
 
 h1 {
-  font-size: 40px;
+    font-size: 40px;
   /*color: #f5a623;*/
-  line-height: 48px;
-  display: inline;
+    line-height: 48px;
+    display: inline;
 }
 
 h2 {
-  font-weight: bold;
-  font-size: 24px;
+    font-weight: bold;
+    font-size: 24px;
   /*color: #999;*/
-  line-height: 29px;
-  padding: 10px;
+    line-height: 29px;
+    padding: 10px;
 }
 
 h3 {
-  font-style: italic;
-  font-size: 20px;
+    font-style: italic;
+    font-size: 20px;
   /*color: #000;*/
-  line-height: 22px;
+    line-height: 22px;
 }
 
 h4 {
-  font-weight: bold;
-  font-size: 14px;
+    font-weight: bold;
+    font-size: 14px;
   /*color: #4a4a4a;*/
-  line-height: 17px;
+    line-height: 17px;
 }
 
 h2,
 h4,
 h5 {
-  padding:10px 5%;
-
+    padding: 10px 5%;
 }
 
 h3 {
-  padding-top: 10px;
+    padding-top: 10px;
 }
 
-
 .date-text {
-  font-style: italic;
-  font-size: 14px;
+    font-style: italic;
+    font-size: 14px;
   /*color: #999;*/
-  line-height: 16px;
-  float: left;
+    line-height: 16px;
+    float: left;
 }
 
 .location-text {
-  font-style: italic;
-  font-size: 14px;
+    font-style: italic;
+    font-size: 14px;
   /*color: #999;*/
-  line-height: 16px;
-  float: right;
-
+    line-height: 16px;
+    float: right;
 }
 
 p {
-  font-size: 14px;
+    font-size: 14px;
   /*color: #333;*/
-  line-height: 21px;
+    line-height: 21px;
 }
 
 a {
-  color: #fed31a;
-  text-decoration: none;
-  margin-top: 10px;
-  display: block;
+    color: #fed31a;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
 }
 
 .welcome-message {
-  font-style: italic;
-  font-size: 30px;
-  line-height: 28px;
-  display: block;
-  text-align: center;
-  margin: 70px;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 28px;
+    display: block;
+    text-align: center;
+    margin: 70px;
 }
 
 #skills-h3 {
-  color: #fed31a;
-  display: none;
-  padding-top: 30px;
-  width: 60%;
-  float: right;
-  text-align: left;
+    color: #fed31a;
+    display: none;
+    padding-top: 30px;
+    width: 60%;
+    float: right;
+    text-align: left;
 }
 
-
 .gold-text {
-  color: #fed31a;
+    color: #fed31a;
 }
 
 .white-text {
-  font-weight: bold;
-  color: #fff;
+    font-weight: bold;
+    color: #fff;
 }
 
-/*Gradient background color instead of grey: green to purple*/
 .section-space {
-  padding-bottom: 10px;
-  clear:both;
+    padding-bottom: 10px;
+    clear: both;
 }
 
 /* TODO: Replace with image later
 #header{}
 */
 #skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 60%;
-  margin: 0 auto;
-  text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .skill-item {
-  width: 50%;
+    width: 50%;
 }
 
 .flex-box {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
 }
 
 .center-content {
-  padding: 2.5% 5%;
+    padding: 2.5% 5%;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 .biopic {
-  float: left;
-  padding: 10px;
-  width: 20%;
-  display: none;
+    float: left;
+    padding: 10px;
+    width: 20%;
+    display: none;
 }
 
 img {
-  padding: 10px;
+    padding: 10px;
 }
 
 span {
-  padding: 5px;
+    padding: 5px;
 }
 
 .map-tweet {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 500px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 500px;
 }
 
 #mapDiv, #twitterFeed {
-  max-width: 50%;
-  text-align: center;
+    max-width: 50%;
+    text-align: center;
 }
 
 #lets-connect {
-  text-align: center;
+    text-align: center;
 }
 
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
-  #lets-connect {
-    margin-top: 5%;
-  }
+    #lets-connect {
+        margin-top: 5%;
+    };
 }
 
 @media only screen and (max-width:900px) {
-  .biopic {
-    width: 175px;
-  }
+    .biopic {
+        width: 175px;
+    };
 }
 
 @media only screen and (max-width: 750px) {
-  #lets-connect {
-    margin-top: 10%;
-  }
-  .biopic {
-    width: 150px;
-  }
-  .welcome-message {
-    display: none;
-  }
+    #lets-connect {
+        margin-top: 10%;
+    }
+
+    .biopic {
+        width: 150px;
+    }
+
+    .welcome-message {
+        display: none;
+    };
 }
 
 #map {
-  display: block;
-  height: 100%;
-  margin: 0 5%;
+    display: block;
+    height: 100%;
+    margin: 0 5%;
 }
 
 #mapDiv, #twitterFeed {
-  height: 400px;
-  width: 100% !important;
-  padding-bottom: 5%;
+    height: 400px;
+    width: 100% !important;
+    padding-bottom: 5%;
 }
 
 @media only screen and (min-width: 750px) {
-  #skills-h3,
+    #skills-h3,
   .biopic {
-    display: block;
-  }
+        display: block;
+    };
 }
