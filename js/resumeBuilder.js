@@ -113,9 +113,6 @@ var projects = {
 
 
 bio.display = function() {
-	var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-	$("#header").append(formattedMessage);
-
 	var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 	$("#header").prepend(formattedRole);
 
@@ -147,6 +144,9 @@ bio.display = function() {
 			$("#skills").append(formattedSkills);
 		}
 	}
+
+	var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+	$("#header").append(formattedMessage);
 };
 
 bio.display();
@@ -252,6 +252,7 @@ education.display();
 
 //add a map
 $("#mapDiv").append(googleMap);
+$("#twitterFeed").append(twitterFeed);
 
 bio.displayFooter = function() {
 	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);

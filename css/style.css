@@ -5,6 +5,10 @@
   font-family: 'zocial', sans-serif;
 }
 
+/** {
+  outline: 1px solid red !important;
+}*/
+
 body {
   background: turquoise; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left,rgba(40,178,133,0.9), rgba(74,70,200,0.7)); /*Safari 5.1-6*/
@@ -84,7 +88,6 @@ h4 {
 }
 
 h2,
-#skills-h3,
 h4,
 h5 {
   padding:10px 5%;
@@ -128,17 +131,20 @@ a {
 
 .welcome-message {
   font-style: italic;
-  font-size: 18px;
+  font-size: 30px;
   line-height: 28px;
   display: block;
   text-align: center;
-
+  margin: 70px;
 }
 
 #skills-h3 {
   color: #fed31a;
   display: none;
   padding-top: 30px;
+  width: 60%;
+  float: right;
+  text-align: left;
 }
 
 
@@ -164,7 +170,9 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 50%;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .skill-item {
@@ -191,7 +199,7 @@ ul {
 .biopic {
   float: left;
   padding: 10px;
-  width: 200px;
+  width: 20%;
   display: none;
 }
 
@@ -201,6 +209,19 @@ img {
 
 span {
   padding: 5px;
+}
+
+.map-tweet {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+}
+
+#mapDiv, #twitterFeed {
+  max-width: 50%;
+  text-align: center;
 }
 
 #lets-connect {
@@ -239,9 +260,9 @@ span {
   margin: 0 5%;
 }
 
-#mapDiv {
+#mapDiv, #twitterFeed {
   height: 400px;
-  width: 100%;
+  width: 100% !important;
   padding-bottom: 5%;
 }
 

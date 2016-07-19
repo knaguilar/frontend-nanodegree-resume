@@ -57,6 +57,7 @@ var HTMLonlineURL = '<br><a href="#">%data%</a>';
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
+var twitterFeed = '<a class="twitter-timeline" data-lang="en" data-width="400" data-height="400" data-dnt="true" data-link-color="#19CF86" href="https://twitter.com/knaguilar7">Tweets by knaguilar7</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>';
 
 
 /*
