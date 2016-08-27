@@ -133,8 +133,6 @@ bio.display = function() {
     $("#header").append(formattedMessage);
 };
 
-bio.display();
-
 //Add work experience
 work.display = function() {
     $("#workExperience").append("<hr>");
@@ -151,8 +149,6 @@ work.display = function() {
         $(".work-entry:last").append(formattedDescription);
     }
 };
-
-work.display();
 
 //locationizer:
 function locationizer(work_obj) {
@@ -185,8 +181,6 @@ projects.display = function() {
         }
     }
 };
-
-projects.display();
 
 education.display = function() {
     $("#education").append("<hr>");
@@ -232,12 +226,6 @@ education.display = function() {
     }
 };
 
-education.display();
-
-//add a map
-$("#mapDiv").append(googleMap);
-$("#twitterFeed").append(twitterFeed);
-
 bio.displayFooter = function() {
     var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
     var phone = "<span class='zocial-call'>";
@@ -265,4 +253,17 @@ bio.displayFooter = function() {
     $("#footerContacts").append(formattedLocationFont);
 };
 
-bio.displayFooter();
+var octopus = {
+    render: function(){
+        bio.display();
+        work.display();
+        projects.display();
+        education.display();
+        bio.displayFooter();
+        //add a map
+        $("#mapDiv").append(googleMap);
+        $("#twitterFeed").append(twitterFeed);
+    }
+};
+
+octopus.render();
